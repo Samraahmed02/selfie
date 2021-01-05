@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            /* margin: 0px auto; */
+            width: 500px;
+            height: 375px;
+            border: 10px #333 solid;
+        }
+
+        #videoElement {
+            width: 500px;
+            height: 375px;
+            background-color: #666;
+        }
+
+        #clickSelfie {
+            border-radius: 50%;
+            margin-top: 2%;
+            margin-right: 100%;
+            margin-left: 40%;
+            background-color: rgb(45, 177, 142);
+            width: 60px;
+            height: 60px;
+            border:3px solid #aaaaaa;
+            font-size: 20px;
+            padding: 2%;
+            /* border: none; */
+        }
+
+        #selfies {
+            margin-left: 120%;
+            /* margin-bottom: 150%; */
+            margin-top: -85%;
+            max-width: 30%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="container">
+        <video autoplay="true" id="videoElement"> </video>
+        <button id="clickSelfie"><i class="fa fa-camera"></i></button>
+        <div id="selfies">
+
+        </div>
+        <canvas id="selfieCanvas" style="display: none;"></canvas>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
